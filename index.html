@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Muhammad Nauman</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme"> <!-- Defaults to dark theme -->
+
+    <!-- Theme Switcher Button (Pinned to Top Right) -->
+    <button class="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle Theme">
+        <i class="fa-solid fa-sun theme-icon-sun"></i>
+        <i class="fa-solid fa-moon theme-icon-moon"></i>
+    </button>
+
+    <section class="portfolio-container">
+        
+        <!-- ROW 1: Profile Image & About Text Info -->
+        <div class="hero-layout">
+            
+            <!-- Left Side: Profile Image Frame -->
+            <div class="profile-image-container">
+                <div class="main-image-card">
+                    <img src="Muhammad Nauman_ Pic-Photo.png" alt="Muhammad Nauman">
+                </div>
+            </div>
+
+            <!-- Right Side: Bio Content & Stats -->
+            <div class="profile-content">
+                
+                <!-- Main Header Row: Title on left, Stats on right -->
+                <div class="profile-header-inline">
+                    <div class="name-badge-wrapper">
+                        <h1 class="profile-name">Muhammad Nauman</h1>
+                        
+                        <!-- Certification Badges Row -->
+                        <div class="certification-badges-container">
+                            <img src="CC.png" alt="ISC2 CC Badge" class="badge-icon">
+                            <img src="CNSP.webp" alt="CNSP Badge" class="badge-icon">
+                            <img src="CEH.png" alt="CEH Badge" class="badge-icon">
+                            <img src="CySA+.png" alt="CompTIA CySA+ Badge" class="badge-icon">
+                            <img src="CISM.png" alt="ISACA CISM Badge" class="badge-icon">
+                        </div>
+                    </div>
+                    
+                    <!-- Stat Cards Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <i class="fa-solid fa-briefcase stat-icon"></i>
+                            <div>
+                                <h3>+5 Years</h3>
+                                <p>Experience</p>
+                            </div>
+                        </div>
+			<div class="stat-card">
+                            <i class="fa-solid fa-award stat-icon"></i>
+                            <div>
+                                <h3>Level</h3>
+                                <p>Professional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="profile-titles">
+                    Cyber security Professional | CISM | CySA+ | CEHv13 | FortiSOAR Engineer | Qradar SIEM Engineer | Trend Vision One | Veteran 🎖️
+                </p>
+
+                <!-- Biography Text -->
+                <p class="profile-bio">
+                    Results-driven Information Security professional with hands-on SOC experience in threat detection, incident response, SOAR administration, and SOAR automation. Skilled in phishing analysis, threat intelligence, log correlation, and security operations optimization using tools SIEM, SOAR, and XDR platforms. Proven ability to strengthen security posture through proactive monitoring, automation, and cross-functional collaboration.
+                </p>
+            </div>
+        </div>
+
+        <!-- ROW 2: Full Width Tab System -->
+        <div class="tabs-section">
+            <div class="tab-header-container">
+                <button class="tab-button active" onclick="switchTab(event, 'experience')">Experience</button>
+		<button class="tab-button" onclick="switchTab(event, 'licenses')">Licenses & certifications</button>
+                <button class="tab-button" onclick="switchTab(event, 'education')">Education</button>
+                <button class="tab-button" onclick="switchTab(event, 'licenses')">Tools</button>
+                <button class="tab-button" onclick="switchTab(event, 'trainings')">Trainings</button>
+                <button class="tab-button" onclick="switchTab(event, 'skills')">Skills</button>
+                <button class="tab-button" onclick="switchTab(event, 'contact')">Contact Information</button>
+            </div>
+
+            <div class="tab-content-container">
+                <!-- Experience Content Tab Pane -->
+                <div id="experience" class="tab-pane active">
+                    <h2>Experience</h2>
+                    
+                    <div class="timeline-container">
+                        <!-- Job Entry 1: Askari Bank -->
+                        <div class="timeline-item single-role">
+                            <a href="https://www.askaribank.com/" target="_blank" rel="noopener noreferrer" class="company-logo-link">
+                                <div class="company-logo">
+                                    <img src="askari-logo.png" alt="Askari Bank">
+                                </div>
+                            </a>
+                            <div class="timeline-content-block">
+                                <h3 class="job-title">Manager SOC</h3>
+                                <p class="company-meta">Askari Bank • Full-time</p>
+                                <p class="job-duration">May 2026 - Present • 3 mos</p>
+                                <p class="job-location">Islamabad, Pakistan • On-site</p>
+                            </div>
+                        </div>
+
+                        <!-- Job Entry 2: The Bank of Punjab -->
+                        <div class="timeline-item multi-role">
+                            <a href="https://www.bop.com.pk/" target="_blank" rel="noopener noreferrer" class="company-logo-link">
+                                <div class="company-logo">
+                                    <img src="bop-logo.png" alt="The Bank of Punjab">
+                                </div>
+                            </a>
+                            <div class="timeline-content-block">
+                                <h3 class="parent-company-title">The Bank of Punjab</h3>
+                                <p class="company-meta">Full-time • 1 yr 11 mos</p>
+                                <p class="job-location-root">Lahore, Punjab, Pakistan • On-site</p>
+
+                                <div class="nested-roles-group">
+                                    <!-- Sub-role A -->
+                                    <div class="role-node">
+                                        <span class="node-dot"></span>
+                                        <div class="role-details">
+                                            <h4 class="sub-job-title">Team Lead</h4>
+                                            <p class="sub-job-duration">May 2025 - May 2026 • 1 yr 1 mo</p>
+                                            <p class="role-description">
+                                                Created and maintained SIEM rules, indexing, and event mapping. 
+                                                <span class="hidden-text">
+<br>Performed log parsing and normalization across multiple data sources, optimizing dashboard load times and query efficiency.
+<br>Administered FortiSOAR platform including playbooks and automation workflows.
+<br>Integrated SOAR with firewalls, SIEM, XDR and Threat Intel Platforms.
+<br>Conducted threat hunting using XDR telemetry.
+<br>Reduced false positives through rule tuning and optimization.</span>
+                                                <span class="more-btn" onclick="expandText(this)">... more</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Sub-role B -->
+                                    <div class="role-node">
+                                        <span class="node-dot"></span>
+                                        <div class="role-details">
+                                            <h4 class="sub-job-title">SOC Officer</h4>
+                                            <p class="sub-job-duration">Jul 2024 - May 2025 • 11 mos</p>
+                                            <p class="role-description">
+                                                Monitored SIEM dashboards, alerts, and reports for incident detection and response. 
+                                                <span class="hidden-text">
+<br>Investigated phishing and spam incidents using sandbox analysis.
+<br>Conducted threat hunting using XDR telemetry.
+<br>Performed system health monitoring, backups, and patch management.
+<br>Analyzed threat advisories from CISA and other intelligence sources.</span>
+                                                <span class="more-btn" onclick="expandText(this)">... more</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<div class="timeline-container">
+                        <!-- Job Entry 1: Askari Bank -->
+                        <div class="timeline-item single-role">
+                            <a href="https://www.mod.gov.pk/" target="_blank" rel="noopener noreferrer" class="company-logo-link">
+                                <div class="company-logo">
+                                    <img src="mod.png" alt="Askari Bank">
+                                </div>
+                            </a>
+                            <div class="timeline-content-block">
+                                <h3 class="job-title">CyberSecurity Officer</h3>
+                                <p class="company-meta">Ministry of Defense • Full-time</p>
+                                <p class="job-duration">Nov 2020 - Sep 2024</p>
+                                <p class="job-location">Pakistan • On-site</p>
+				<p class="role-description">
+                                                Conducted security assessments across multiple geographic locations. 
+                                                <span class="hidden-text">
+  
+    <br>Delivered security awareness training to staff.
+    <br>Reviewed and improved information security policies.
+    <br>Configured and maintained organizational networks.
+    <br>Implemented physical and administrative security controls.
+    <br>Collaborated with cross-functional teams to ensure control effectiveness.</span>
+                                                <span class="more-btn" onclick="expandText(this)">... more</span>
+                                            </p>
+
+                            </div>
+                        </div>
+</div>
+                </div>
+
+                <!-- Placeholder Panels -->
+
+
+
+                <div id="education" class="tab-pane"><h2>Education</h2>
+		<div class="timeline-container">
+                        <!-- Edu Entry 1:  NUST -->
+                        <div class="timeline-item single-role">
+                            <a href="https://www.nust.edu.pk/" target="_blank" rel="noopener noreferrer" class="company-logo-link">
+                                <div class="company-logo">
+                                    <img src="nust.png" alt="Askari Bank">
+                                </div>
+                            </a>
+                            <div class="timeline-content-block">
+                                <h3 class="job-title">Bachelor of Computer Software Engineering</h3>
+                                <p class="company-meta">National University of Sciences & Technology (NUST)</p>
+                                <p class="job-duration">Sep 2016 - July 2020</p>
+                            </div>
+                        </div>
+
+			</div>
+		</div>
+                <div id="trainings" class="tab-pane"><h2>Trainings</h2><p>Training milestones...</p></div>
+                <div id="licenses" class="tab-pane"><h2>Licenses & Certifications</h2><p>Certificates...</p></div>
+                <div id="skills" class="tab-pane"><h2>Technical Skills</h2><p>Skills map...</p></div>
+                <div id="contact" class="tab-pane"><h2>Contact Information</h2><p>Contact channels...</p></div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
